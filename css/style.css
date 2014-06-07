@@ -1,0 +1,211 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family:"roboto",sans-serif;
+	font-weight: 100;
+}
+h2{
+	font-weight: 100;
+	text-transform: uppercase;
+	text-align: center;
+	color:white;
+}
+h1{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2em;
+	color:white;
+}
+*{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	margin:0;
+	padding:0;
+	min-height: 0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	letter-spacing: 1em;
+	
+}
+.wrapper{
+	width:100%;
+	height:auto;
+}
+.main{
+	position:relative;
+	width:auto;
+	height:700px;
+
+	background: url("../images/coffee.png") bottom center no-repeat #a0dbbd;
+}
+.main .article{
+	position:absolute;
+	top:30px;
+	left:0;
+	right:0;
+}
+p{
+	display:block;
+	padding:0 40px 15px 40px;
+	margin:0 90px;
+	line-height: 3;
+}
+.description h3{
+	margin:5% auto;
+}
+.description p,h3{
+	letter-spacing: 0.4em;
+	text-align: center;
+}
+.description{
+	width:100%;
+	height:auto;
+}
+.dr-menu{
+	line-height: 3;
+	color:#666;
+	position:relative;
+	left:7em;
+}
+
+.dr-menu > div{
+	cursor:pointer;
+	margin-bottom: 1em;
+	
+}
+.dr-menu div .dr-icon {
+    position:absolute;
+    font-size: 250%;
+    line-height: 1.6;
+    padding: 0 10px;
+    transition: all 0.4s ease;
+}
+.dr-menu.dr-menu-open div .dr-icon {
+    color: #60a773;
+    left:-5%;
+    transform: translateX(40%);
+}
+
+.dr-menu div .dr-icon:after {
+    content: "\e008";
+    position: absolute;
+    font-size: 50%;
+    line-height: 3.25;
+    left:-10%;
+    opacity: 0;
+}
+
+.dr-menu.dr-menu-open > div .dr-icon:after {
+    opacity: 1;
+}
+.dr-menu > div .dr-label {
+    padding-left: 4em;
+    position: relative;
+    top:1em;
+    display: block;
+    color: #60a773;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 2.75;
+    transition: all 0.2s ease-in;
+}
+ 
+.dr-menu.dr-menu-open > div .dr-label {
+    transform: translateY(90%);
+
+}
+.dr-menu ul {
+    padding: 0;
+    margin: 0 3em 0 0;
+    list-style: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0s linear 205s;
+}
+.dr-menu.dr-menu-open ul {
+    opacity: 1;
+    z-index: 4;
+    pointer-events: auto;
+    transition: opacity 0s linear 0s;
+}
+.dr-menu ul li {
+    display: block;
+    margin: 0 0 5px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+ 
+.dr-menu.dr-menu-open ul li {
+    opacity: 1;
+}
+
+
+.dr-menu ul li a {
+    display: inline-block;
+    padding: 0px;
+    letter-spacing: 3px;
+    color: #666;
+}
+
+.dr-menu ul li a:hover {
+    color: #60a773;
+}
+.dr-icon:before, 
+.dr-icon:after {
+    position: relative;
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+ 
+.dr-menu ul .dr-icon:before {
+    margin-right: 15px;
+}
+ 
+.dr-icon-bullhorn:before {
+    content: "\e000";
+}
+ 
+.dr-icon-camera:before {
+    content: "\e002";
+}
+ 
+.dr-icon-heart:before {
+    content: "\e003";
+}
+ 
+.dr-icon-settings:before {
+    content: "\e004";
+}
+ 
+.dr-icon-switch:before {
+    content: "\e005";
+}
+ 
+.dr-icon-download:before {
+    content: "\e006";
+}
+ 
+.dr-icon-user:before {
+    content: "\e001";
+}
+ 
+.dr-icon-menu:before {
+    content: "\e007";
+}
